@@ -1,0 +1,11 @@
+{
+  "name": "Vocabite",
+  "short_name": "Vocabite",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6f3ee",
+  "theme_color": "#1a6fe8",
+  "icons": [{ "src": "/logo/mark.png", "sizes": "any", "type": "image/png", "purpose": "any" }]
+}
