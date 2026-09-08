@@ -1,1 +1,0 @@
-import{r as e}from"./useRouter-80ermfqe.js";import{t}from"./useNavigate-C31LACoW.js";var n=e(),r=function(){return(0,n.jsx)(t,{to:`/stats`})};export{r as component};
