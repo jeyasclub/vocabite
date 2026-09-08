@@ -1,1 +1,0 @@
-import{r as e}from"./useRouter-80ermfqe.js";import{E as t}from"./index-I5_8f7t2.js";var n=e(),r=function(){return(0,n.jsx)(t,{to:`/stats`})};export{r as component};
