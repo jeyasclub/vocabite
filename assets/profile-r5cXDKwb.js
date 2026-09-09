@@ -1,1 +1,0 @@
-import{r as e}from"./useRouter-80ermfqe.js";import{T as t}from"./index-Bu_Yualx.js";var n=e(),r=function(){return(0,n.jsx)(t,{to:`/stats`})};export{r as component};
