@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jeyasclub.vocabite",
+      "sha256_cert_fingerprints": [
+        "C0:E4:9A:0E:57:9A:6A:4B:CE:64:EB:FC:1D:16:71:AC:3A:EC:20:29:F1:72:8C:9E:67:82:93:AF:F5:6D:E9:1C"
+      ]
+    }
+  }
+]
