@@ -1,0 +1,1 @@
+import{r as e}from"./jsx-runtime-BkSabwWG.js";import{t}from"./react-DHmoMYoq.js";import{a as n,u as r}from"./penguin-C6etARdp.js";var i=e(t(),1);function a(e){let t=n();return i.useCallback(n=>t.navigate({...n,from:n.from??e?.from}),[e?.from,t])}function o(e){let t=n(),o=a(),s=i.useRef(null);return r(()=>{s.current!==e&&(o(e),s.current=e)},[t,e,o]),null}export{a as n,o as t};
