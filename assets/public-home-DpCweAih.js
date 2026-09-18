@@ -590,6 +590,13 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
           scroll-behavior: auto;
         }
       }
+      @media (max-width: 360px) {
+        .nav { gap: 10px; }
+        .brand { font-size: 20px; gap: 6px; }
+        .brand img { width: 32px; height: 32px; }
+        .nav-links { gap: 10px; }
+        .nav-links .login { padding: 8px 12px; }
+      }
     </style>
   </head>
   <body>
@@ -729,8 +736,7 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
             <p>
               Definisi bahasa Inggris mengutamakan Merriam-Webster, dengan sumber kamus alternatif
               bila diperlukan. Pada Android, padanan Indonesia mengutamakan Wikikamus dan
-              menggunakan Google Cloud Translation sebagai cadangan. AI dapat digunakan pada jalur
-              cadangan jika diaktifkan. Makna dan contoh yang tersedia berbeda untuk setiap kata.
+              menggunakan Google Cloud Translation sebagai cadangan. Definisi dan contoh bersumber dari kamus, bukan konten buatan AI. Makna dan contoh yang tersedia berbeda untuk setiap kata.
             </p>
           </details>
           <details>
