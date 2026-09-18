@@ -597,6 +597,46 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
         .nav-links { gap: 10px; }
         .nav-links .login { padding: 8px 12px; }
       }
+      /* A vocabulary field notebook: ink, ruled paper, and pocket tabs. */
+      body { background: #faf8f2; }
+      .nav { border-bottom: 1px solid #1a6fe830; }
+      .hero { padding-top: 76px; padding-bottom: 90px; }
+      h1 { letter-spacing: -2px; }
+      .pill { background: transparent; border-radius: 0; padding: 0; }
+      .dot { border-radius: 0; transform: rotate(-12deg); background: #1a6fe8; }
+      .scene { background: repeating-linear-gradient(transparent 0 31px, #1a6fe819 31px 32px); border-left: 1px solid #dc9e9260; }
+      .halo { width: 290px; height: 230px; top: 150px; background: #bad8ff; border: 2px dashed #7baae7; border-radius: 8px 8px 65px 65px; transform: rotate(5deg); }
+      .word-card { border-radius: 5px; box-shadow: 5px 7px 0 #e5dfd1, 0 16px 26px #243c6612; }
+      .floating { border-radius: 0; background: #ffe27ad9; transform: rotate(4deg); font-family: Georgia, serif; font-style: italic; font-size: 17px; }
+      .strip { justify-content: space-between; border-style: dashed; }
+      .grid { gap: 0; border-block: 1px solid var(--line); }
+      .feature { background: transparent; border: 0; border-radius: 0; padding: 32px; }
+      .feature + .feature { border-left: 1px solid var(--line); }
+      .number { background: transparent; border: 1px solid var(--blue); border-radius: 50%; transform: rotate(-9deg); font-family: Georgia, serif; font-size: 20px; }
+      .field-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; padding: 30px 0 65px; }
+      .notes-copy p:not(.eyebrow) { color: var(--muted); font-size: 14px; max-width: 460px; }
+      .notes-copy a { display: inline-block; margin-top: 15px; font-weight: 600; font-size: 14px; }
+      .notebook { position: relative; background: repeating-linear-gradient(#fffdf7 0 31px, #dce6ec 31px 32px); padding: 36px 36px 65px; border: 1px solid #dfd9c9; border-radius: 3px; box-shadow: 7px 7px 0 #eee8db; transform: rotate(2deg); }
+      .notebook::before { content: ''; position: absolute; width: 90px; height: 27px; background: #ffe27abb; top: -14px; left: 35%; transform: rotate(-8deg); }
+      .notebook-label, .notebook-foot { font-size: 10px; letter-spacing: 1px; color: var(--muted); }
+      .notebook h3 { font-family: Georgia, serif; font-size: 35px; color: var(--blue); margin: 20px 0 8px; }
+      .pencil-note { font: italic 18px/1.75 Georgia, serif; }
+      .margin-note { margin-top: 25px; border-left: 2px solid #e4b655; padding-left: 15px; max-width: 270px; }
+      .margin-note span { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+      .margin-note p { font-size: 13px; margin: 5px 0 20px; }
+      .notebook img { position: absolute; bottom: -28px; right: -15px; object-fit: contain; }
+      .download { background: transparent; border-block: 2px solid var(--blue); border-radius: 0; padding: 45px 10px; }
+      .download .eyebrow { color: var(--blue); }
+      @media(max-width: 600px) {
+        .hero { padding-top: 35px; padding-bottom: 65px; }
+        h1 { font-size: 42px; }
+        .strip { justify-content: center; }
+        .feature { padding: 26px 0; }
+        .feature + .feature { border-left: 0; border-top: 1px solid var(--line); }
+        .field-notes { grid-template-columns: 1fr; gap: 35px; padding: 0 0 40px; }
+        .notebook { margin: 0 8px; padding: 28px 23px 65px; }
+        .notebook img { right: -10px; width: 110px; height: 110px; }
+      }
     </style>
   </head>
   <body>
@@ -606,7 +646,7 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
           ><img src="/logo/mark.png" alt="" width="42" height="42" />Vocabite</a
         >
         <nav class="nav-links" aria-label="Navigasi utama">
-          <a class="feature-link" href="#fitur">Fitur</a><a href="#paket">Paket</a
+          <a class="feature-link" href="#fitur">Fitur</a><a href="#catatan">Pocket</a
           ><a class="login" href="/login/">Masuk ↗</a>
         </nav>
       </header>
@@ -614,9 +654,9 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
         <section class="hero">
           <div>
             <span class="eyebrow pill"
-              ><span class="dot" aria-hidden="true"></span>A pocket for every word</span
+              ><span class="dot" aria-hidden="true"></span>Catatan kecil untuk kata baru</span
             >
-            <h1>Kantong kecil.<br /><span>Kosakata luas.</span></h1>
+            <h1>Ketemu kata baru?<br /><span>Kantongi dulu.</span></h1>
             <p class="lead">
               Kata baru jangan cuma lewat. Cari artinya, simpan di Pocket, lalu latih sedikit demi
               sedikit hingga kamu mengingatnya.
@@ -636,7 +676,7 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
               </button>
             </div>
             <p class="note" id="play-status">
-              Mulai gratis dengan 20 kata. Unduhan Google Play segera tersedia.
+              Buka di browser. Versi Google Play segera menyusul.
             </p>
           </div>
           <div class="scene" aria-label="Ilustrasi kartu kosakata Vocabite">
@@ -648,7 +688,7 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
               <p class="translation">hal-hal kecil</p>
               <p class="example">“Enjoy the little things.”</p>
             </div>
-            <span class="floating">Satu kata lagi hari ini ✨</span
+            <span class="floating">Jangan hilang lagi, ya.</span
             ><img
               class="mascot"
               src="/mascot/wave.png"
@@ -665,8 +705,8 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
         <section class="section" id="fitur">
           <div class="section-heading">
             <p class="eyebrow">Dari penasaran jadi paham</p>
-            <h2>Temukan. Simpan. Ingat.</h2>
-            <p>Bangun kebiasaan kecil dari kata-kata yang kamu temui setiap hari.</p>
+            <h2>Dari subtitle film,<br />sampai jadi kosakatamu.</h2>
+            <p>Kata menarik bisa muncul di mana saja. Beri tempat untuk menyimpannya, lalu kembali saat waktunya berlatih.</p>
           </div>
           <div class="grid">
             <article class="feature">
@@ -695,28 +735,9 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
             </article>
           </div>
         </section>
-        <section class="pocket-panel" id="paket">
-          <div>
-            <p class="eyebrow">Tumbuh bersama Pocket-mu</p>
-            <h2>Mulai kecil.<br />Beri ruang untuk lebih.</h2>
-            <p>
-              Paket Free untuk memulai kebiasaan. Premium memberi kapasitas lebih besar untuk
-              koleksi kosakatamu.
-            </p>
-            <a href="/subscribe/" style="color: white; font-size: 13px; font-weight: 600"
-              >Lihat perbandingan paket →</a
-            >
-          </div>
-          <div class="plans">
-            <div class="plan">
-              <div class="plan-name">FREE</div>
-              <strong>20 kata</strong><small>Gratis untuk mulai belajar</small>
-            </div>
-            <div class="plan premium">
-              <div class="plan-name">PREMIUM ✦</div>
-              <strong>1.000 kata</strong><small>Rp15.000 / bulan</small>
-            </div>
-          </div>
+        <section class="field-notes" id="catatan" aria-labelledby="notes-title">
+          <div class="notes-copy"><p class="eyebrow">Di dalam Pocket-mu</p><h2 id="notes-title">Bukan sekadar<br />daftar kata.</h2><p>Tambahkan catatan tentang tempat kamu menemukan kata itu. Sebuah adegan, satu kalimat dari buku, atau percakapan yang ingin kamu ingat.</p><p>Saat latihan, kata-kata itu muncul kembali. Kamu bisa melihat mana yang sudah diingat dan mana yang perlu diulang.</p><a href="/login/">Buka Pocket pertamamu <span aria-hidden="true">↗</span></a></div>
+          <div class="notebook"><span class="notebook-label">CATATAN POCKET / 001</span><h3>serendipity</h3><p class="pencil-note">Ketemu sesuatu yang menyenangkan,<br />padahal tidak sedang mencarinya.</p><div class="margin-note"><span>Catatan pribadi</span><p>Seperti nemu buku bagus waktu cuma mampir ke toko.</p></div><span class="notebook-foot">Ilustrasi catatan pengguna</span><img src="/mascot/study.png" width="130" height="130" loading="lazy" alt="Penguin Vocabite sedang belajar"></div>
         </section>
         <section class="section faq">
           <div class="section-heading">
@@ -757,14 +778,14 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
         </section>
         <section class="download" aria-labelledby="download-title">
           <p class="eyebrow">Satu kata adalah awal yang baik</p>
-          <h2 id="download-title">Pocket pertamamu menunggu.</h2>
+          <h2 id="download-title">Hari ini, kata apa yang kamu temukan?</h2>
           <p>
             Mulai dari kata yang membuatmu penasaran hari ini. Kami menemanimu membangun kebiasaan
             berikutnya.
           </p>
           <div class="actions">
             <a class="button" href="/login/"
-              >Mulai belajar gratis <span aria-hidden="true">↗</span></a
+              >Simpan kata pertamamu <span aria-hidden="true">↗</span></a
             >
           </div>
         </section>
