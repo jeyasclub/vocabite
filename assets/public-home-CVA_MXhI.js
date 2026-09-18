@@ -1,4 +1,4 @@
-<!doctype html>
+import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
@@ -590,13 +590,6 @@
           scroll-behavior: auto;
         }
       }
-      @media (max-width: 360px) {
-        .nav { gap: 10px; }
-        .brand { font-size: 20px; gap: 6px; }
-        .brand img { width: 32px; height: 32px; }
-        .nav-links { gap: 10px; }
-        .nav-links .login { padding: 8px 12px; }
-      }
     </style>
   </head>
   <body>
@@ -792,3 +785,4 @@
     </div>
   </body>
 </html>
+`,n=e(),r=t.split(`<body>`)[1].split(`</body>`)[0];function i(){return(0,n.jsx)(`div`,{dangerouslySetInnerHTML:{__html:r}})}export{i as t};

@@ -1,11 +1,794 @@
 <!doctype html>
-<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vocabite — Belajar dan simpan kosakata bahasa Inggris</title><meta name="description" content="Vocabite membantu belajar kosakata bahasa Inggris: cari arti, simpan kata di Pocket, latihan mengingat, dan bagikan profil belajar. Aplikasi oleh Jeya’s Club."><link rel="icon" href="/favicon.svg"></head><body>
-<style>.public-home{font:17px/1.7 system-ui,sans-serif;color:#1a1a2e;background:#f6f3ee;min-height:100vh}.public-home *{box-sizing:border-box}.public-home .wrap{max-width:1060px;margin:auto;padding:28px 24px}.public-home nav{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}.public-home a{color:#185fc2;text-underline-offset:4px}.public-home .brand{font-size:25px;font-weight:800;text-decoration:none}.public-home .hero{display:grid;grid-template-columns:1.7fr 1fr;gap:40px;align-items:center;padding:64px 0}.public-home h1{font-size:clamp(36px,6vw,60px);line-height:1.12;letter-spacing:-1.5px;margin:12px 0 24px}.public-home h2{font-size:28px;line-height:1.3}.public-home h3{font-size:20px}.public-home .eyebrow{font-size:13px;font-weight:700;letter-spacing:2px;color:#185fc2}.public-home .cta{display:inline-block;background:#1a6fe8;color:white;padding:13px 24px;border-radius:30px;font-weight:700;text-decoration:none;margin-top:12px}.public-home .hero img{width:100%;max-width:270px;justify-self:center}.public-home .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.public-home article{background:white;padding:24px;border-radius:24px}.public-home .info{padding:32px 0}.public-home footer{border-top:1px solid #d1d8e2;margin-top:36px;padding-top:24px;font-size:15px}.public-home .links{display:flex;gap:20px;flex-wrap:wrap}@media(max-width:680px){.public-home .hero{grid-template-columns:1fr;padding:36px 0;gap:20px}.public-home .hero img{max-width:150px;grid-row:1}.public-home .grid{grid-template-columns:1fr}.public-home .wrap{padding:22px}}body{margin:0}</style>
-<div class="public-home"><div class="wrap">
-<nav aria-label="Navigasi utama"><a class="brand" href="/">Vocabite</a><div class="links"><a href="#fitur">Fitur</a><a href="/login/">Masuk ke aplikasi</a></div></nav>
-<main><section class="hero"><div><p class="eyebrow">A POCKET FOR EVERY WORD · JEYA’S CLUB</p><h1>Kata baru hari ini.<br>Ingat lebih lama.</h1><p>Vocabite adalah aplikasi belajar kosakata bahasa Inggris untuk penutur bahasa Indonesia. Cari arti kata yang kamu temui, simpan ke Pocket pribadi, lalu latih ingatanmu sedikit demi sedikit.</p><p>Tersedia melalui website dan aplikasi Android, dengan akun dan koleksi yang tersinkron.</p><a class="cta" href="/login/">Mulai belajar</a><p><small>Informasi aplikasi ini dapat dibaca tanpa akun. Login diperlukan untuk menyimpan dan menyinkronkan Pocket pribadi.</small></p></div><img src="/logo/mark.png" alt="Maskot Vocabite" width="270" height="270"></section>
-<section id="fitur"><h2>Dari menemukan kata sampai mengingatnya</h2><div class="grid"><article><h3>Cari dan pahami</h3><p>Temukan arti, terjemahan Indonesia, sinonim, contoh penggunaan, dan pengucapan. Tambahkan konteks untuk membantu memahami kata atau frasa.</p></article><article><h3>Simpan dan latih</h3><p>Simpan kata serta catatan di Pocket. Latihan mengingat dan jadwal pengulangan membantu kamu membangun kebiasaan belajar. Pantau statistik dan target harianmu.</p></article><article><h3>Bagikan progres</h3><p>Buat profil dengan nama, bio, dan media sosial. Jika kamu mengaktifkan profil publik, teman dapat melihat flashcards, jumlah kata, dan achievements melalui tautan profil.</p></article></div></section>
-<section class="info"><h2>Mengapa masuk dengan Google?</h2><p>Vocabite menggunakan identitas akun Google, termasuk nama dan email, untuk membuat akun, menjaga Pocket terpisah antar pengguna, serta menyinkronkan koleksi di website dan Android. Vocabite tidak menerima kata sandi Google kamu. Informasi lebih lengkap tersedia di <a href="/privacy-policy/">Privacy Policy</a>.</p><p>Pencarian menggunakan layanan kamus dan, bila tersedia, AI. Hasil dapat keliru; periksa kembali bila diperlukan. Profil dibagikan hanya saat kamu memilih untuk menjadikannya publik.</p></section>
-<section><h2>Tentang Vocabite</h2><p>Vocabite dikelola oleh <strong>Jeya’s Club</strong> untuk membantu pengguna memperluas kosakata bahasa Inggris melalui koleksi pribadi dan latihan rutin. Fitur saat ini dapat digunakan tanpa biaya langganan Vocabite.</p><p>Bantuan, pertanyaan privasi, atau permintaan penghapusan akun: <!--email_off--><a href="mailto:jeyasclub@gmail.com">jeyasclub@gmail.com</a><!--/email_off-->.</p></section></main>
-<footer><div class="links"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="mailto:jeyasclub@gmail.com">Hubungi Jeya’s Club</a></div><p>Vocabite · Jeya’s Club</p></footer></div></div>
-</body></html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vocabite — Kantong kecil, kosakata luas.</title>
+    <meta
+      name="description"
+      content="Cari arti kata bahasa Inggris, simpan di Pocket, dan latih ingatanmu bersama Vocabite. Mulai gratis di website. Aplikasi Android segera hadir di Google Play."
+    />
+    <meta name="theme-color" content="#1a6fe8" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --blue: #1a6fe8;
+        --ink: #1a1a2e;
+        --muted: #59667b;
+        --line: #d5e4f7;
+        --pale: #e8f1fd;
+        --yellow: #ffe27a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 28px;
+      }
+      body {
+        margin: 0;
+        background: #f8fbff;
+        color: var(--ink);
+        font:
+          15px/1.75 Poppins,
+          system-ui,
+          sans-serif;
+      }
+      a {
+        color: var(--blue);
+        text-underline-offset: 4px;
+      }
+      button {
+        font: inherit;
+      }
+      a:focus-visible,
+      button:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid var(--blue);
+        outline-offset: 5px;
+      }
+      .wrap {
+        max-width: 1160px;
+        margin: auto;
+        padding: 0 28px;
+      }
+      .nav {
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 24px;
+        font-weight: 800;
+        text-decoration: none;
+        letter-spacing: -1px;
+      }
+      .brand img {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+      }
+      .nav-links a {
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--muted);
+      }
+      .nav-links .login {
+        color: var(--blue);
+        padding: 10px 19px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: white;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr;
+        align-items: center;
+        gap: 64px;
+        padding: 66px 0 85px;
+      }
+      .eyebrow {
+        color: var(--blue);
+        font-size: 11px;
+        letter-spacing: 1.8px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--pale);
+        padding: 7px 13px;
+        border-radius: 30px;
+        letter-spacing: 0.4px;
+      }
+      .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--blue);
+      }
+      h1 {
+        font-size: clamp(39px, 4.7vw, 60px);
+        line-height: 1.15;
+        letter-spacing: -2.5px;
+        margin: 22px 0;
+      }
+      h1 span {
+        color: var(--blue);
+      }
+      .lead {
+        color: var(--muted);
+        max-width: 490px;
+        font-size: 16px;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin: 28px 0 13px;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        background: var(--blue);
+        color: white;
+        text-decoration: none;
+        border: 0;
+        border-radius: 14px;
+        padding: 14px 22px;
+        font-size: 14px;
+        font-weight: 600;
+        min-height: 58px;
+        box-shadow: 0 7px 18px #1a6fe81c;
+      }
+      .button:hover {
+        background: #1558c0;
+      }
+      .store {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        text-align: left;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: white;
+        color: #526177;
+        padding: 9px 18px;
+        cursor: not-allowed;
+      }
+      .store svg {
+        width: 23px;
+        height: 26px;
+      }
+      .store small {
+        display: block;
+        font-size: 10px;
+        line-height: 1.4;
+      }
+      .store strong {
+        font-size: 15px;
+        line-height: 1.5;
+      }
+      .note {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .scene {
+        position: relative;
+        min-height: 425px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .halo {
+        position: absolute;
+        width: 390px;
+        height: 390px;
+        max-width: 100%;
+        border-radius: 50%;
+        background: var(--pale);
+        border: 28px solid #f0f6ff;
+      }
+      .word-card {
+        position: relative;
+        width: 310px;
+        background: white;
+        padding: 29px;
+        border: 1px solid var(--line);
+        border-radius: 26px;
+        box-shadow: 0 22px 65px #1a6fe819;
+        transform: rotate(-4deg);
+      }
+      .card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--muted);
+        font-size: 11px;
+      }
+      .tag {
+        padding: 3px 10px;
+        background: var(--pale);
+        color: var(--blue);
+        border-radius: 20px;
+        font-weight: 600;
+      }
+      .word-card h2 {
+        font-size: 35px;
+        letter-spacing: -1px;
+        margin: 23px 0 0;
+      }
+      .word-card p {
+        margin: 6px 0;
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .word-card .translation {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-top: 18px;
+      }
+      .example {
+        border-top: 1px solid var(--line);
+        padding-top: 16px;
+        margin-top: 20px !important;
+      }
+      .mascot {
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        object-fit: contain;
+        bottom: -17px;
+        right: -5px;
+        filter: drop-shadow(0 9px 12px #1a6fe815);
+      }
+      .floating {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        transform: rotate(5deg);
+        background: var(--yellow);
+        padding: 10px 17px;
+        border-radius: 12px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .scene-label {
+        position: absolute;
+        bottom: -25px;
+        left: 16px;
+        font-size: 10px;
+        color: var(--muted);
+      }
+      .strip {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        flex-wrap: wrap;
+        border-block: 1px solid var(--line);
+        padding: 20px 0;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .strip span::before {
+        content: "✓";
+        color: var(--blue);
+        font-weight: 800;
+        margin-right: 9px;
+      }
+      .section {
+        padding: 80px 0;
+      }
+      .section-heading {
+        max-width: 590px;
+        margin-bottom: 32px;
+      }
+      h2 {
+        font-size: clamp(26px, 3vw, 36px);
+        line-height: 1.3;
+        letter-spacing: -1px;
+        margin: 10px 0 16px;
+      }
+      .section-heading p,
+      .feature p {
+        color: var(--muted);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+      .feature {
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 28px;
+      }
+      .number {
+        display: flex;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        background: var(--pale);
+        color: var(--blue);
+        border-radius: 13px;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .feature h3 {
+        font-size: 18px;
+        margin: 23px 0 10px;
+      }
+      .feature p {
+        font-size: 13px;
+        margin: 0;
+      }
+      .pocket-panel {
+        background: var(--blue);
+        border-radius: 30px;
+        padding: 45px 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+        color: white;
+      }
+      .pocket-panel .eyebrow {
+        color: var(--yellow);
+      }
+      .pocket-panel p {
+        font-size: 14px;
+        color: #e6efff;
+      }
+      .plans {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      .plan {
+        border: 1px solid #ffffff40;
+        background: #ffffff0f;
+        border-radius: 20px;
+        padding: 22px 18px;
+      }
+      .plan strong {
+        display: block;
+        font-size: 28px;
+        letter-spacing: -1px;
+      }
+      .plan small {
+        font-size: 11px;
+      }
+      .plan .plan-name {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 18px;
+      }
+      .plan.premium {
+        background: var(--yellow);
+        color: var(--ink);
+        border-color: var(--yellow);
+      }
+      .faq {
+        max-width: 780px;
+        margin: 0 auto;
+      }
+      .faq .section-heading {
+        text-align: center;
+        margin: 0 auto 30px;
+      }
+      details {
+        border-bottom: 1px solid var(--line);
+        padding: 20px 2px;
+      }
+      summary {
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      details p {
+        font-size: 13px;
+        color: var(--muted);
+        padding-right: 20px;
+      }
+      .download {
+        background: var(--pale);
+        border-radius: 28px;
+        padding: 40px;
+        text-align: center;
+      }
+      .download p {
+        color: var(--muted);
+        font-size: 14px;
+        max-width: 540px;
+        margin: 0 auto;
+      }
+      .download .actions {
+        justify-content: center;
+        margin-bottom: 0;
+      }
+      .footer {
+        margin-top: 65px;
+        border-top: 1px solid var(--line);
+        padding: 32px 0;
+      }
+      .footer-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 28px;
+        align-items: start;
+      }
+      .footer-links {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .footer-links a {
+        font-size: 11px;
+        color: var(--muted);
+      }
+      .footer p {
+        font-size: 11px;
+        color: var(--muted);
+      }
+      @media (max-width: 800px) {
+        .hero {
+          gap: 25px;
+          grid-template-columns: 1fr 1fr;
+        }
+        .scene {
+          min-height: 390px;
+        }
+        .word-card {
+          width: 260px;
+          padding: 22px;
+        }
+        .mascot {
+          width: 130px;
+          height: 130px;
+        }
+        .grid {
+          gap: 12px;
+        }
+        .feature {
+          padding: 20px;
+        }
+        .pocket-panel {
+          padding: 32px;
+          gap: 25px;
+        }
+      }
+      @media (max-width: 600px) {
+        .wrap {
+          padding: 0 22px;
+        }
+        .nav {
+          min-height: 80px;
+        }
+        .nav-links {
+          gap: 12px;
+        }
+        .nav-links .feature-link {
+          display: none;
+        }
+        .brand {
+          font-size: 22px;
+        }
+        .hero {
+          grid-template-columns: 1fr;
+          padding: 30px 0 60px;
+          gap: 26px;
+        }
+        h1 {
+          font-size: 44px;
+        }
+        .lead {
+          font-size: 14px;
+        }
+        .scene {
+          min-height: 355px;
+          max-width: 360px;
+          width: 100%;
+          margin: auto;
+        }
+        .halo {
+          width: 310px;
+          height: 310px;
+        }
+        .word-card {
+          width: 270px;
+        }
+        .mascot {
+          width: 140px;
+          height: 140px;
+          bottom: 0;
+        }
+        .floating {
+          top: 0;
+        }
+        .scene-label {
+          bottom: -12px;
+        }
+        .strip {
+          gap: 10px 20px;
+          font-size: 11px;
+        }
+        .section {
+          padding: 52px 0;
+        }
+        .grid,
+        .pocket-panel {
+          grid-template-columns: 1fr;
+        }
+        .feature {
+          padding: 25px;
+        }
+        .pocket-panel {
+          padding: 28px 22px;
+          gap: 18px;
+          border-radius: 24px;
+        }
+        .plan {
+          padding: 18px 13px;
+        }
+        .plan strong {
+          font-size: 25px;
+        }
+        .download {
+          padding: 30px 20px;
+        }
+        .footer-top {
+          flex-direction: column;
+        }
+        .footer-links {
+          gap: 12px 18px;
+        }
+        .button,
+        .store {
+          flex: 1;
+          white-space: nowrap;
+        }
+        .actions {
+          gap: 10px;
+        }
+        .button {
+          padding: 13px 16px;
+          font-size: 13px;
+        }
+        .store {
+          padding: 9px 13px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+      @media (max-width: 360px) {
+        .nav { gap: 10px; }
+        .brand { font-size: 20px; gap: 6px; }
+        .brand img { width: 32px; height: 32px; }
+        .nav-links { gap: 10px; }
+        .nav-links .login { padding: 8px 12px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="nav">
+        <a class="brand" href="/" aria-label="Vocabite beranda"
+          ><img src="/logo/mark.png" alt="" width="42" height="42" />Vocabite</a
+        >
+        <nav class="nav-links" aria-label="Navigasi utama">
+          <a class="feature-link" href="#fitur">Fitur</a><a href="#paket">Paket</a
+          ><a class="login" href="/login/">Masuk ↗</a>
+        </nav>
+      </header>
+      <main>
+        <section class="hero">
+          <div>
+            <span class="eyebrow pill"
+              ><span class="dot" aria-hidden="true"></span>A pocket for every word</span
+            >
+            <h1>Kantong kecil.<br /><span>Kosakata luas.</span></h1>
+            <p class="lead">
+              Kata baru jangan cuma lewat. Cari artinya, simpan di Pocket, lalu latih sedikit demi
+              sedikit hingga kamu mengingatnya.
+            </p>
+            <div class="actions">
+              <a class="button" href="/login/">Mulai di website <span aria-hidden="true">↗</span></a
+              ><button class="store" disabled aria-describedby="play-status">
+                <svg viewBox="0 0 24 28" fill="none" aria-hidden="true">
+                  <path
+                    d="M3 2L22 14L3 26V2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M3 2L15 18M3 26L15 10" stroke="currentColor" stroke-width="1.5" /></svg
+                ><span><small>SEGERA HADIR DI</small><strong>Google Play</strong></span>
+              </button>
+            </div>
+            <p class="note" id="play-status">
+              Mulai gratis dengan 20 kata. Unduhan Google Play segera tersedia.
+            </p>
+          </div>
+          <div class="scene" aria-label="Ilustrasi kartu kosakata Vocabite">
+            <div class="halo" aria-hidden="true"></div>
+            <div class="word-card">
+              <div class="card-top"><span>MY POCKET</span><span class="tag">noun</span></div>
+              <h2>little things</h2>
+              <p>Hal kecil, kemajuan yang berarti.</p>
+              <p class="translation">hal-hal kecil</p>
+              <p class="example">“Enjoy the little things.”</p>
+            </div>
+            <span class="floating">Satu kata lagi hari ini ✨</span
+            ><img
+              class="mascot"
+              src="/mascot/wave.png"
+              alt="Maskot penguin Vocabite melambaikan tangan"
+              width="170"
+              height="170"
+            /><span class="scene-label">Ilustrasi tampilan · contoh konten</span>
+          </div>
+        </section>
+        <div class="strip">
+          <span>Pocket pribadi</span><span>Latihan mengingat</span><span>Sinkronisasi akun</span
+          ><span>Tanpa iklan</span>
+        </div>
+        <section class="section" id="fitur">
+          <div class="section-heading">
+            <p class="eyebrow">Dari penasaran jadi paham</p>
+            <h2>Temukan. Simpan. Ingat.</h2>
+            <p>Bangun kebiasaan kecil dari kata-kata yang kamu temui setiap hari.</p>
+          </div>
+          <div class="grid">
+            <article class="feature">
+              <span class="number">01</span>
+              <h3>Pahami kata baru</h3>
+              <p>
+                Cari definisi dan kelas kata, lalu pelajari contoh penggunaan dan pelafalan yang
+                tersedia. Merriam-Webster menjadi sumber kamus utama.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="number">02</span>
+              <h3>Jadikan milikmu</h3>
+              <p>
+                Simpan kata ke Pocket dan tambahkan catatan sendiri. Koleksi tersinkron lewat akun
+                agar perjalanan belajarmu tetap terhubung.
+              </p>
+            </article>
+            <article class="feature">
+              <span class="number">03</span>
+              <h3>Bangun ingatanmu</h3>
+              <p>
+                Ulangi kosakata lewat latihan, ikuti target harian, dan pantau progres. Bagikan
+                profil publik dengan username pilihanmu.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="pocket-panel" id="paket">
+          <div>
+            <p class="eyebrow">Tumbuh bersama Pocket-mu</p>
+            <h2>Mulai kecil.<br />Beri ruang untuk lebih.</h2>
+            <p>
+              Paket Free untuk memulai kebiasaan. Premium memberi kapasitas lebih besar untuk
+              koleksi kosakatamu.
+            </p>
+            <a href="/subscribe/" style="color: white; font-size: 13px; font-weight: 600"
+              >Lihat perbandingan paket →</a
+            >
+          </div>
+          <div class="plans">
+            <div class="plan">
+              <div class="plan-name">FREE</div>
+              <strong>20 kata</strong><small>Gratis untuk mulai belajar</small>
+            </div>
+            <div class="plan premium">
+              <div class="plan-name">PREMIUM ✦</div>
+              <strong>1.000 kata</strong><small>Rp15.000 / bulan</small>
+            </div>
+          </div>
+        </section>
+        <section class="section faq">
+          <div class="section-heading">
+            <p class="eyebrow">Kenali Vocabite</p>
+            <h2>Sebelum mulai belajar</h2>
+          </div>
+          <details>
+            <summary>Kenapa perlu masuk dengan Google?</summary>
+            <p>
+              Akun digunakan untuk menyimpan dan menyinkronkan Pocket pribadimu. Vocabite
+              menggunakan informasi identitas seperti nama dan email, dan tidak menerima kata sandi
+              Google kamu. Baca <a href="/privacy-policy/">kebijakan privasi</a> untuk detailnya.
+            </p>
+          </details>
+          <details>
+            <summary>Dari mana arti kata dan terjemahannya?</summary>
+            <p>
+              Definisi bahasa Inggris mengutamakan Merriam-Webster, dengan sumber kamus alternatif
+              bila diperlukan. Pada Android, padanan Indonesia mengutamakan Wikikamus dan
+              menggunakan Google Cloud Translation sebagai cadangan. AI dapat digunakan pada jalur
+              cadangan jika diaktifkan. Makna dan contoh yang tersedia berbeda untuk setiap kata.
+            </p>
+          </details>
+          <details>
+            <summary>Apakah profilku bisa dilihat semua orang?</summary>
+            <p>
+              Profil dibagikan saat kamu memilih untuk menjadikannya publik dan menetapkan username.
+              Teman kemudian dapat mencari username atau membuka tautan profilmu untuk melihat
+              koleksi aktif dan progres yang dibagikan.
+            </p>
+          </details>
+          <details>
+            <summary>Apakah aplikasi sudah tersedia di Google Play?</summary>
+            <p>
+              Belum. Tautan unduh akan ditambahkan setelah aplikasi tersedia di Google Play. Untuk
+              sekarang, kamu bisa mulai belajar melalui website.
+            </p>
+          </details>
+        </section>
+        <section class="download" aria-labelledby="download-title">
+          <p class="eyebrow">Satu kata adalah awal yang baik</p>
+          <h2 id="download-title">Pocket pertamamu menunggu.</h2>
+          <p>
+            Mulai dari kata yang membuatmu penasaran hari ini. Kami menemanimu membangun kebiasaan
+            berikutnya.
+          </p>
+          <div class="actions">
+            <a class="button" href="/login/"
+              >Mulai belajar gratis <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="/">Vocabite<span style="color: var(--blue)">.</span></a>
+            <p>A pocket for every word · Oleh Jeya’s Club</p>
+          </div>
+          <div class="footer-links">
+            <a href="/privacy-policy/">Kebijakan privasi</a
+            ><a href="/terms-of-service/">Ketentuan layanan</a
+            ><a href="/delete-account/">Hapus akun</a
+            ><a href="mailto:jeyasclub@gmail.com">Hubungi kami</a>
+          </div>
+        </div>
+        <p>
+          Butuh bantuan?
+          <!--email_off--><a href="mailto:jeyasclub@gmail.com">jeyasclub@gmail.com</a
+          ><!--/email_off-->
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
