@@ -1,6 +1,7 @@
 import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
 <html lang="id">
   <head>
+    <script src="/theme.js"><\/script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Vocabite — Kantong kecil, kosakata luas.</title>
@@ -603,7 +604,17 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
         .notebook img { right: -10px; width: 110px; height: 110px; }
       }
     </style>
-  </head>
+  <style>
+html[data-theme="dark"] { --ink:#edf3fc; --muted:#b1bfd1; --line:#3b506b; --pale:#25364c; --blue:#82b5ff; }
+html[data-theme="dark"] body { background:#101722; }
+html[data-theme="dark"] .notebook { background:repeating-linear-gradient(#182332 0 31px,#3b506b 31px 32px); box-shadow:7px 7px 0 #080e18; }
+html[data-theme="dark"] .btn,html[data-theme="dark"] .floating,html[data-theme="dark"] .halo { color:#14263d; }
+html[data-theme="dark"] .word-card { background:#182332; color:var(--ink); }
+html[data-theme="dark"] .nav-links .login { background:var(--pale); }
+html[data-theme="dark"] .button { color:#101c30; }
+@media(max-width:640px) { .nav { flex-wrap:wrap; gap:12px; padding-block:16px; } .nav>label { width:100%; text-align:right; } }
+select[data-theme-select] { font:inherit; max-width:170px; padding:8px; border:1px solid var(--line); border-radius:10px; background:var(--pale);color:var(--ink); }
+</style></head>
   <body>
     <div class="wrap">
       <header class="nav">
@@ -614,6 +625,7 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
           <a class="feature-link" href="#fitur">Fitur</a><a href="#catatan">Pocket</a
           ><a class="login" href="/login/">Masuk ↗</a>
         </nav>
+<label>Tema <select data-theme-select aria-label="Tema"><option value="system">Sesuai perangkat</option><option value="light">Terang</option><option value="dark">Gelap</option></select></label>
       </header>
       <main>
         <section class="hero">
