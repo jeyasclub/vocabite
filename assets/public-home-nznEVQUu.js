@@ -614,6 +614,14 @@ html[data-theme="dark"] .nav-links .login { background:var(--pale); }
 html[data-theme="dark"] .button { color:#101c30; }
 @media(max-width:640px) { .nav { flex-wrap:wrap; gap:12px; padding-block:16px; } .nav>label { width:100%; text-align:right; } }
 select[data-theme-select] { font:inherit; max-width:170px; padding:8px; border:1px solid var(--line); border-radius:10px; background:var(--pale);color:var(--ink); }
+</style><style>
+.theme-toggle { position:relative; display:inline-flex; align-items:center; justify-content:space-between; width:76px; height:44px; padding:0 10px; border:1px solid #7796be; border-radius:999px; background:#e8f1fd; color:#23416b; cursor:pointer; flex-shrink:0; }
+.theme-toggle:focus-visible { outline:3px solid #82b5ff; outline-offset:3px; }
+.theme-toggle svg { position:relative; z-index:1; width:18px; height:18px; }
+.theme-knob { position:absolute; top:5px; left:5px; width:32px; height:32px; border-radius:50%; background:white; box-shadow:0 1px 4px #0003; transition:transform .18s; }
+html[data-theme="dark"] .theme-toggle { background:#25364c; color:#e9f2ff; }
+html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46668c; }
+@media(prefers-reduced-motion:reduce) { .theme-knob { transition:none; } }
 </style></head>
   <body>
     <div class="wrap">
@@ -625,7 +633,7 @@ select[data-theme-select] { font:inherit; max-width:170px; padding:8px; border:1
           <a class="feature-link" href="#fitur">Fitur</a><a href="#catatan">Pocket</a
           ><a class="login" href="/login/">Masuk ↗</a>
         </nav>
-<label>Tema <select data-theme-select aria-label="Tema"><option value="system">Sesuai perangkat</option><option value="light">Terang</option><option value="dark">Gelap</option></select></label>
+<button type="button" role="switch" aria-label="Mode gelap" aria-checked="false" data-theme-toggle class="theme-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10l2 2M5 19l2-2M17 7l2-2"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 13a9 9 0 0 1-10-10A9 9 0 1 0 21 13Z"/></svg><span class="theme-knob"></span></button>
       </header>
       <main>
         <section class="hero">
