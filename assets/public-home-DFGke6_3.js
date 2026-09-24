@@ -1,13 +1,13 @@
 import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <script src="/theme.js"><\/script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Vocabite — Kantong kecil, kosakata luas.</title>
+    <title>Vocabite — A little pocket. A world of words.</title>
     <meta
       name="description"
-      content="Cari arti kata bahasa Inggris, simpan di Pocket, dan latih ingatanmu bersama Vocabite. Mulai gratis di website. Aplikasi Android segera hadir di Google Play."
+      content="Discover English words, save them to your Pocket, and practice with Vocabite. Start free on the web. Coming soon to Google Play."
     />
     <meta name="theme-color" content="#1a6fe8" />
     <link rel="icon" href="/favicon.svg" />
@@ -626,28 +626,27 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
   <body>
     <div class="wrap">
       <header class="nav">
-        <a class="brand" href="/" aria-label="Vocabite beranda"
+        <a class="brand" href="/" aria-label="Vocabite home"
           ><img src="/logo/mark.png" alt="" width="42" height="42" />Vocabite</a
         >
-        <nav class="nav-links" aria-label="Navigasi utama">
-          <a class="feature-link" href="#fitur">Fitur</a><a href="#catatan">Pocket</a
-          ><a class="login" href="/login/">Masuk ↗</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a class="feature-link" href="#fitur">Features</a><a href="#catatan">Pocket</a
+          ><a class="login" href="/login/">Sign in ↗</a>
         </nav>
-<button type="button" role="switch" aria-label="Mode gelap" aria-checked="false" data-theme-toggle class="theme-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10l2 2M5 19l2-2M17 7l2-2"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 13a9 9 0 0 1-10-10A9 9 0 1 0 21 13Z"/></svg><span class="theme-knob"></span></button>
+<button type="button" role="switch" aria-label="Dark mode" aria-checked="false" data-theme-toggle class="theme-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10l2 2M5 19l2-2M17 7l2-2"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 13a9 9 0 0 1-10-10A9 9 0 1 0 21 13Z"/></svg><span class="theme-knob"></span></button>
       </header>
       <main>
         <section class="hero">
           <div>
             <span class="eyebrow pill"
-              ><span class="dot" aria-hidden="true"></span>Catatan kecil untuk kata baru</span
+              ><span class="dot" aria-hidden="true"></span>A little space for new words</span
             >
-            <h1>Ketemu kata baru?<br /><span>Kantongi dulu.</span></h1>
+            <h1>Found a new word?<br /><span>Pocket it.</span></h1>
             <p class="lead">
-              Kata baru jangan cuma lewat. Cari artinya, simpan di Pocket, lalu latih sedikit demi
-              sedikit hingga kamu mengingatnya.
+              Give new words a place to stay. Look them up, save them to your Pocket, and practice a little at a time until they stick.
             </p>
             <div class="actions">
-              <a class="button" href="/login/">Mulai di website <span aria-hidden="true">↗</span></a
+              <a class="button" href="/login/">Start on the web <span aria-hidden="true">↗</span></a
               ><button class="store" disabled aria-describedby="play-status">
                 <svg viewBox="0 0 24 28" fill="none" aria-hidden="true">
                   <path
@@ -657,104 +656,96 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
                     stroke-linejoin="round"
                   />
                   <path d="M3 2L15 18M3 26L15 10" stroke="currentColor" stroke-width="1.5" /></svg
-                ><span><small>SEGERA HADIR DI</small><strong>Google Play</strong></span>
+                ><span><small>COMING SOON TO</small><strong>Google Play</strong></span>
               </button>
             </div>
             <p class="note" id="play-status">
-              Buka di browser. Versi Google Play segera menyusul.
+              Use Vocabite in your browser. The Google Play version is coming soon.
             </p>
           </div>
-          <div class="scene" aria-label="Ilustrasi kartu kosakata Vocabite">
+          <div class="scene" aria-label="Example Vocabite vocabulary card">
             <div class="halo" aria-hidden="true"></div>
             <div class="word-card">
               <div class="card-top"><span>MY POCKET</span><span class="tag">noun</span></div>
               <h2>little things</h2>
-              <p>Hal kecil, kemajuan yang berarti.</p>
+              <p>Little things. Meaningful progress.</p>
               <p class="translation">hal-hal kecil</p>
               <p class="example">“Enjoy the little things.”</p>
             </div>
-            <span class="floating">Jangan hilang lagi, ya.</span
+            <span class="floating">A word worth keeping.</span
             ><img
               class="mascot"
               src="/mascot/wave.png"
-              alt="Maskot penguin Vocabite melambaikan tangan"
+              alt="Vocabite penguin waving"
               width="170"
               height="170"
-            /><span class="scene-label">Ilustrasi tampilan · contoh konten</span>
+            /><span class="scene-label">Illustration · sample content</span>
           </div>
         </section>
         <section class="section" id="fitur">
           <div class="section-heading">
-            <p class="eyebrow">Dari penasaran jadi paham</p>
-            <h2>Dari subtitle film,<br />sampai jadi kosakatamu.</h2>
-            <p>Kata menarik bisa muncul di mana saja. Beri tempat untuk menyimpannya, lalu kembali saat waktunya berlatih.</p>
+            <p class="eyebrow">Turn curiosity into understanding</p>
+            <h2>From movie subtitles,<br />to words you know.</h2>
+            <p>Interesting words turn up everywhere. Give them a home, then come back when it is time to practice.</p>
           </div>
           <div class="grid">
             <article class="feature">
-              <h3>Nemu kosakata baru</h3>
-              <p>Dari film, buku, artikel, meme, atau obrolan sehari-hari. Kata baru bisa kamu temukan di mana saja.</p>
+              <h3>Find a new word</h3>
+              <p>In a movie, a book, an article, a meme, or an everyday conversation. New words are everywhere.</p>
             </article>
             <article class="feature">
               <h3>Look up</h3>
-              <p>Cari katanya di Vocabite. Lihat makna, sinonim, terjemahan, dan contoh penggunaannya untuk memahami kata yang kamu temukan.</p>
+              <p>Look it up in Vocabite. Explore meanings, synonyms, Indonesian translations, and examples to understand how the word is used.</p>
             </article>
             <article class="feature">
               <h3>Add to Pocket!</h3>
-              <p>Simpan jadi koleksi flashcard pribadi. Recall kapan saja dan ulangi sampai kata itu mastered.</p>
+              <p>Save it to your personal flashcard collection. Recall it anytime and keep practicing until you master it.</p>
             </article>
           </div>
         </section>
         <section class="field-notes" id="catatan" aria-labelledby="notes-title">
-          <div class="notes-copy"><p class="eyebrow">Di dalam Pocket-mu</p><h2 id="notes-title">Bukan sekadar<br />daftar kata.</h2><p>Tambahkan catatan tentang tempat kamu menemukan kata itu. Sebuah adegan, satu kalimat dari buku, atau percakapan yang ingin kamu ingat.</p><p>Saat latihan, kata-kata itu muncul kembali. Kamu bisa melihat mana yang sudah diingat dan mana yang perlu diulang.</p><a href="/login/">Buka Pocket pertamamu <span aria-hidden="true">↗</span></a></div>
-          <div class="notebook"><span class="notebook-label">CATATAN POCKET / 001</span><h3>serendipity</h3><p class="pencil-note">Ketemu sesuatu yang menyenangkan,<br />padahal tidak sedang mencarinya.</p><div class="margin-note"><span>Catatan pribadi</span><p>Seperti nemu buku bagus waktu cuma mampir ke toko.</p></div><span class="notebook-foot">Ilustrasi catatan pengguna</span><img src="/mascot/study.png" width="130" height="130" loading="lazy" alt="Penguin Vocabite sedang belajar"></div>
+          <div class="notes-copy"><p class="eyebrow">Inside your Pocket</p><h2 id="notes-title">Your words,<br />with a story.</h2><p>Add a note about where you found a word: a scene, a line from a book, or a conversation you want to remember.</p><p>Revisit your words during practice. See which ones you remember and which ones need another look.</p><a href="/login/">Start your Pocket <span aria-hidden="true">↗</span></a></div>
+          <div class="notebook"><span class="notebook-label">POCKET NOTES / 001</span><h3>serendipity</h3><p class="pencil-note">Finding something wonderful,<br />when you were not looking for it.</p><div class="margin-note"><span>Personal note</span><p>Like finding a great book while just browsing a shop.</p></div><span class="notebook-foot">Example personal note</span><img src="/mascot/study.png" width="130" height="130" loading="lazy" alt="Vocabite penguin studying"></div>
         </section>
         <section class="section faq">
           <div class="section-heading">
-            <p class="eyebrow">Kenali Vocabite</p>
-            <h2>Sebelum mulai belajar</h2>
+            <p class="eyebrow">Meet Vocabite</p>
+            <h2>Before you begin</h2>
           </div>
           <details>
-            <summary>Kenapa perlu masuk dengan Google?</summary>
+            <summary>Why sign in with Google?</summary>
             <p>
-              Akun digunakan untuk menyimpan dan menyinkronkan Pocket pribadimu. Vocabite
-              menggunakan informasi identitas seperti nama dan email, dan tidak menerima kata sandi
-              Google kamu. Baca <a href="/privacy-policy/">kebijakan privasi</a> untuk detailnya.
+              Your account saves and syncs your personal Pocket. Vocabite uses identity information such as your name and email, and does not receive your Google password. Read our <a href="/privacy-policy/">privacy policy</a> for details.
             </p>
           </details>
           <details>
-            <summary>Dari mana arti kata dan terjemahannya?</summary>
+            <summary>Where do the definitions and translations come from?</summary>
             <p>
-              Definisi bahasa Inggris mengutamakan Merriam-Webster, dengan sumber kamus alternatif
-              bila diperlukan. Pada Android, padanan Indonesia mengutamakan Wikikamus dan
-              menggunakan Google Cloud Translation sebagai cadangan. Definisi dan contoh bersumber dari kamus, bukan konten buatan AI. Makna dan contoh yang tersedia berbeda untuk setiap kata.
+              English definitions primarily come from Merriam-Webster, with alternative dictionaries when needed. Indonesian translations use Wikikamus and Google Cloud Translation. Definitions and examples come from real dictionaries. Available meanings and examples vary by word.
             </p>
           </details>
           <details>
-            <summary>Apakah profilku bisa dilihat semua orang?</summary>
+            <summary>Can everyone see my profile?</summary>
             <p>
-              Profil dibagikan saat kamu memilih untuk menjadikannya publik dan menetapkan username.
-              Teman kemudian dapat mencari username atau membuka tautan profilmu untuk melihat
-              koleksi aktif dan progres yang dibagikan.
+              Your profile is shared when you choose to make it public and set a username. Friends can then search for your username or open your profile link to see your shared collection and progress.
             </p>
           </details>
           <details>
-            <summary>Apakah aplikasi sudah tersedia di Google Play?</summary>
+            <summary>Is the app available on Google Play?</summary>
             <p>
-              Belum. Tautan unduh akan ditambahkan setelah aplikasi tersedia di Google Play. Untuk
-              sekarang, kamu bisa mulai belajar melalui website.
+              Not yet. A download link will be added when the app is available on Google Play. For now, you can start learning on the website.
             </p>
           </details>
         </section>
         <section class="download" aria-labelledby="download-title">
-          <p class="eyebrow">Satu kata adalah awal yang baik</p>
-          <h2 id="download-title">Hari ini, kata apa yang kamu temukan?</h2>
+          <p class="eyebrow">Every word is a beginning</p>
+          <h2 id="download-title">What word did you discover today?</h2>
           <p>
-            Mulai dari kata yang membuatmu penasaran hari ini. Kami menemanimu membangun kebiasaan
-            berikutnya.
+            Start with a word that caught your curiosity today. Make room for a little learning every day.
           </p>
           <div class="actions">
             <a class="button" href="/login/"
-              >Simpan kata pertamamu <span aria-hidden="true">↗</span></a
+              >Save your first word <span aria-hidden="true">↗</span></a
             >
           </div>
         </section>
@@ -763,17 +754,17 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
         <div class="footer-top">
           <div>
             <a class="brand" href="/">Vocabite<span style="color: var(--blue)">.</span></a>
-            <p>A pocket for every word · Oleh Jeya’s Club</p>
+            <p>A pocket for every word · By Jeya’s Club</p>
           </div>
           <div class="footer-links">
-            <a href="/privacy-policy/">Kebijakan privasi</a
-            ><a href="/terms-of-service/">Ketentuan layanan</a
-            ><a href="/delete-account/">Hapus akun</a
-            ><a href="mailto:jeyasclub@gmail.com">Hubungi kami</a>
+            <a href="/privacy-policy/">Privacy policy</a
+            ><a href="/terms-of-service/">Terms of service</a
+            ><a href="/delete-account/">Delete account</a
+            ><a href="mailto:jeyasclub@gmail.com">Contact us</a>
           </div>
         </div>
         <p>
-          Butuh bantuan?
+          Need help?
           <!--email_off--><a href="mailto:jeyasclub@gmail.com">jeyasclub@gmail.com</a
           ><!--/email_off-->
         </p>
