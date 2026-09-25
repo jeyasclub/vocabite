@@ -622,6 +622,13 @@ select[data-theme-select] { font:inherit; max-width:170px; padding:8px; border:1
 html[data-theme="dark"] .theme-toggle { background:#25364c; color:#e9f2ff; }
 html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46668c; }
 @media(prefers-reduced-motion:reduce) { .theme-knob { transition:none; } }
+</style><style>
+.personal-feature{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding:60px 0 80px;border-top:1px solid var(--line)}
+.personal-copy h2{font-size:clamp(30px,4vw,44px);line-height:1.15;letter-spacing:-1px;margin:12px 0 22px}.personal-copy>p:not(.eyebrow){font-size:15px;line-height:1.8;color:var(--muted);max-width:460px}.feature-cta{display:inline-block;margin-top:16px;font-size:14px;font-weight:600}.personal-feature figure{margin:0;min-width:0}.personal-feature figcaption{text-align:center;font-size:10px;color:var(--muted);margin-top:20px;letter-spacing:.5px}
+.demo-style-list{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin-bottom:20px;font-size:11px;color:var(--muted)}.demo-style-list span{padding:5px 9px;border-bottom:2px solid transparent}.demo-style-list .chosen{color:var(--blue);border-color:var(--blue);font-weight:600}
+.fabric-pocket{position:relative;max-width:350px;margin:auto;padding:38px 28px 38px;text-align:center;color:#243f3c;background:repeating-linear-gradient(135deg,#aec7b3 0 3px,#a9c3af 3px 5px);border:1px solid #71917b;border-radius:7px 7px 66px 66px;box-shadow:7px 10px 0 #71917b20;overflow:hidden}.fabric-pocket:before{content:'';position:absolute;inset:11px;border:2px dashed #54786085;border-radius:4px 4px 55px 55px;pointer-events:none}.fabric-lip{position:absolute;inset:0 0 auto;height:20px;background:#63816d;border-bottom:3px solid #4d6b59}.fabric-pocket>strong{display:block;font-size:19px;position:relative}.demo-handle{display:block;font-size:12px;font-weight:600;margin-top:3px}.fabric-pocket>p{font-size:12px;line-height:1.7;margin:15px auto;max-width:235px}.fabric-tag{position:absolute;right:15px;bottom:24px;font-size:7px;letter-spacing:1px;background:#f8edce;color:#455447;padding:3px 6px;transform:rotate(-7deg)}.demo-avatar{position:relative;width:128px;height:128px;margin:0 auto 8px}.demo-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}.demo-profile-stats{display:flex;justify-content:center;gap:28px;font-size:10px}.demo-profile-stats b{display:block;font-size:22px}.demo-swatches{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:25px}.demo-swatches>span{width:21px;height:21px;border-radius:50%;background:var(--swatch);border:3px solid #faf8f2;box-shadow:0 0 0 1px #8996a5}.demo-swatches>.chosen{box-shadow:0 0 0 2px var(--blue)}.demo-swatches em{font:italic 14px Georgia,serif;color:var(--muted);width:100%;text-align:center;margin-top:4px}
+.friends-feature .personal-copy{grid-column:2;grid-row:1}.friends-feature figure{grid-column:1;grid-row:1}.friends-demo{padding:25px;background:var(--pale);border:1px solid var(--line);border-radius:8px 8px 32px 8px;box-shadow:-7px 7px 0 #1a6fe810}.friends-demo-header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:18px}.friends-demo-header .eyebrow{margin:0}.demo-label{font-size:10px;color:var(--muted)}.demo-search{display:flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13px;color:var(--blue)}.demo-search>span:first-of-type{flex:1}.demo-person{display:flex;align-items:center;gap:10px;padding:14px 0}.demo-avatar.small{width:64px;height:64px;flex-shrink:0;margin:0}.demo-person>div:not(.demo-avatar){min-width:0}.demo-person strong{display:block;font-size:14px}.demo-person>div>span{display:block;font-size:11px;color:var(--muted);overflow-wrap:anywhere}.demo-request{margin-left:auto;color:var(--blue);font-size:10px;font-weight:600;text-align:right}.demo-incoming{border-top:1px solid var(--line);padding-top:17px}.demo-actions{display:flex;gap:8px}.demo-actions span{padding:8px 20px;border:1px solid var(--line);border-radius:8px;font-size:12px;font-weight:600}.demo-actions span:first-child{background:#1a6fe8;color:white;border-color:#1a6fe8}.friends-note{font:italic 17px/1.6 Georgia,serif;color:var(--muted);margin:23px 0 0}
+@media(max-width:700px){.personal-feature{grid-template-columns:1fr;gap:30px;padding:40px 0 50px}.friends-feature .personal-copy,.friends-feature figure{grid-column:auto;grid-row:auto}.friends-demo{padding:20px}.personal-copy h2{font-size:33px}.fabric-pocket{max-width:310px}.demo-style-list{gap:3px}.demo-request{max-width:75px}}
 </style></head>
   <body>
     <div class="wrap">
@@ -706,6 +713,45 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
         <section class="field-notes" id="catatan" aria-labelledby="notes-title">
           <div class="notes-copy"><p class="eyebrow">Inside your Pocket</p><h2 id="notes-title">Your words,<br />with a story.</h2><p>Add a note about where you found a word: a scene, a line from a book, or a conversation you want to remember.</p><p>Revisit your words during practice. See which ones you remember and which ones need another look.</p><a href="/login/">Start your Pocket <span aria-hidden="true">↗</span></a></div>
           <div class="notebook"><span class="notebook-label">POCKET NOTES / 001</span><h3>serendipity</h3><p class="pencil-note">Finding something wonderful,<br />when you were not looking for it.</p><div class="margin-note"><span>Personal note</span><p>Like finding a great book while just browsing a shop.</p></div><span class="notebook-foot">Example personal note</span><img src="/mascot/study.png" width="130" height="130" loading="lazy" alt="Vocabite penguin studying"></div>
+        </section>
+        <section class="personal-feature" aria-labelledby="customize-title">
+          <div class="personal-copy">
+            <p class="eyebrow">A Pocket with personality</p>
+            <h2 id="customize-title">Your words.<br>Your kind of Pocket.</h2>
+            <p>Customize your Pocket with a style and color that feel like you. Go for classic stitching, denim, a cargo flap, a quilted finish, or an envelope fold.</p>
+            <p>Give your penguin its own look with hats and glasses, too. Your choices travel with your profile whenever you share it.</p>
+            <a class="feature-cta" href="/login/">Make it yours <span aria-hidden="true">↗</span></a>
+          </div>
+          <figure class="pocket-demo" aria-label="Illustration of a customized sage denim Pocket with a penguin avatar">
+            <div class="demo-style-list" aria-hidden="true"><span>Classic</span><span class="chosen">Denim</span><span>Cargo</span><span>Quilt</span><span>Airmail</span></div>
+            <div class="fabric-pocket">
+              <div class="fabric-lip" aria-hidden="true"></div>
+              <div class="demo-avatar" aria-hidden="true"><img src="/custom-ava/Default.webp" width="128" height="128" loading="lazy" alt=""><img src="/custom-ava/hat-1.webp" width="128" height="128" loading="lazy" alt=""><img src="/custom-ava/glasses-2.webp" width="128" height="128" loading="lazy" alt=""></div>
+              <strong>Alex’s little collection</strong><span class="demo-handle">@alex_reads</span>
+              <p>Words from books, films &amp; everywhere in between.</p>
+              <div class="demo-profile-stats"><span><b>18</b> Words</span><span><b>6</b> Friends</span></div>
+              <span class="fabric-tag" aria-hidden="true">VOCABITE</span>
+            </div>
+            <div class="demo-swatches" aria-hidden="true"><span style="--swatch:#9cc2e1"></span><span class="chosen" style="--swatch:#a9c7ad"></span><span style="--swatch:#e8b7c5"></span><span style="--swatch:#e4d4b3"></span><span style="--swatch:#cbbce5"></span><em>A color for every mood.</em></div>
+            <figcaption>Feature mockup · example profile</figcaption>
+          </figure>
+        </section>
+        <section class="personal-feature friends-feature" aria-labelledby="friends-title">
+          <div class="personal-copy">
+            <p class="eyebrow">Good words. Good company.</p>
+            <h2 id="friends-title">Make friends.<br>Keep learning.</h2>
+            <p>Find a friend by username, visit their public profile, and send a friend request. They can accept or ignore it — a little hello, on their terms.</p>
+            <p>Explore the words they share and see your friend count on your profile. Make your own profile public when you’re ready to connect.</p>
+            <a class="feature-cta" href="/login/">Find your learning friends <span aria-hidden="true">↗</span></a>
+          </div>
+          <figure class="friends-demo" aria-label="Illustration of username search and a friend request">
+            <div class="friends-demo-header"><span class="eyebrow">Friends</span><span class="demo-label">A shared curiosity</span></div>
+            <div class="demo-search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M19 7v6m-3-3h6"/></svg><span>@maya_words</span><span aria-hidden="true">↗</span></div>
+            <div class="demo-person"><div class="demo-avatar small" aria-hidden="true"><img src="/custom-ava/Default.webp" width="72" height="72" loading="lazy" alt=""><img src="/custom-ava/hat-3.webp" width="72" height="72" loading="lazy" alt=""><img src="/custom-ava/glasses-1.webp" width="72" height="72" loading="lazy" alt=""></div><div><strong>Maya</strong><span>@maya_words</span></div><span class="demo-request">Request sent ✓</span></div>
+            <div class="demo-incoming"><span class="demo-label">Incoming requests</span><div class="demo-person"><div class="demo-avatar small" aria-hidden="true"><img src="/custom-ava/Default.webp" width="72" height="72" loading="lazy" alt=""><img src="/custom-ava/hat-2.webp" width="72" height="72" loading="lazy" alt=""></div><div><strong>Sam</strong><span>@sam_explores</span></div></div><div class="demo-actions" aria-hidden="true"><span>Accept</span><span>Ignore</span></div></div>
+            <p class="friends-note">Every collection has a story.<br>Get to know the person behind it.</p>
+            <figcaption>Feature mockup · example users and request</figcaption>
+          </figure>
         </section>
         <section class="section faq">
           <div class="section-heading">
