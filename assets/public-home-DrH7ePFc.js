@@ -603,7 +603,8 @@ import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
         .notebook { margin: 0 8px; padding: 28px 23px 65px; }
         .notebook img { right: -10px; width: 110px; height: 110px; }
       }
-    </style>
+    .send-demo{padding:26px;border:1px solid var(--line);border-radius:24px;background:var(--pale);box-shadow:8px 8px 0 #1a6fe810}.send-word{padding:22px;border:1px solid var(--line);border-radius:16px;margin-top:18px;background:color-mix(in srgb,var(--pale) 40%,transparent)}.send-word h3{font-size:30px;letter-spacing:-1px;margin:8px 0}.send-word p{font-size:14px;line-height:1.7;color:var(--muted);margin:8px 0}.send-word .demo-label{font-size:11px}.send-recipient{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);margin-top:18px;padding-top:16px}.send-recipient strong{font-size:13px}.send-recipient small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.send-check{margin-left:auto;font-size:12px;color:var(--blue);font-weight:600}.send-path{display:flex;justify-content:center;align-items:center;gap:10px;padding:16px;color:var(--blue);font-size:11px;letter-spacing:1px}.send-notice{border:1px solid var(--line);border-radius:16px;padding:18px;background:color-mix(in srgb,var(--pale) 40%,transparent)}.send-notice-header{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:600}.send-notice-header svg{flex-shrink:0;color:var(--blue)}.send-notice p{font-size:13px;color:var(--muted);line-height:1.7;margin:12px 0}.send-preview-action{display:inline-block;background:var(--blue);color:white;padding:10px 16px;border-radius:10px;font-size:12px;font-weight:600}@media(max-width:400px){.send-demo{padding:18px}.send-word{padding:16px}.send-recipient{gap:8px}}
+</style>
   <style>
 html[data-theme="dark"] { --ink:#edf3fc; --muted:#b1bfd1; --line:#3b506b; --pale:#25364c; --blue:#82b5ff; }
 html[data-theme="dark"] body { background:#101722; }
@@ -711,8 +712,8 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
           </div>
         </section>
         <section class="field-notes" id="catatan" aria-labelledby="notes-title">
-          <div class="notes-copy"><p class="eyebrow">Inside your Pocket</p><h2 id="notes-title">Your words,<br />with a story.</h2><p>Add a note about where you found a word: a scene, a line from a book, or a conversation you want to remember.</p><p>Revisit your words during practice. See which ones you remember and which ones need another look.</p><a href="/login/">Start your Pocket <span aria-hidden="true">↗</span></a></div>
-          <div class="notebook"><span class="notebook-label">POCKET NOTES / 001</span><h3>serendipity</h3><p class="pencil-note">Finding something wonderful,<br />when you were not looking for it.</p><div class="margin-note"><span>Personal note</span><p>Like finding a great book while just browsing a shop.</p></div><span class="notebook-foot">Example personal note</span><img src="/mascot/study.png" width="130" height="130" loading="lazy" alt="Vocabite penguin studying"></div>
+          <div class="notes-copy"><p class="eyebrow">Inside your Pocket</p><h2 id="notes-title">Your words,<br />with a story.</h2><p>Save words you discover in a scene, a line from a book, or a conversation you want to remember.</p><p>Revisit your words during practice. See which ones you remember and which ones need another look.</p><a href="/login/">Start your Pocket <span aria-hidden="true">↗</span></a></div>
+          <div class="notebook"><span class="notebook-label">INSIDE YOUR POCKET</span><h3>serendipity</h3><p class="pencil-note">Finding something wonderful,<br />when you were not looking for it.</p><div class="margin-note"><span>A word to remember</span><p>Like finding a great book while just browsing a shop.</p></div><span class="notebook-foot">Illustrative vocabulary card</span><img src="/mascot/study.png" width="130" height="130" loading="lazy" alt="Vocabite penguin studying"></div>
         </section>
         <section class="personal-feature" aria-labelledby="customize-title">
           <div class="personal-copy">
@@ -740,7 +741,7 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
           <div class="personal-copy">
             <p class="eyebrow">Good words. Good company.</p>
             <h2 id="friends-title">Make friends.<br>Keep learning.</h2>
-            <p>Find a friend by username, visit their public profile, and send a friend request. They can accept or ignore it — a little hello, on their terms.</p>
+            <p>Find a friend by username, visit their public profile, and send a friend request. They can accept or deny it — a little hello, on their terms.</p>
             <p>Explore the words they share and see your friend count on your profile. Make your own profile public when you’re ready to connect.</p>
             <a class="feature-cta" href="/login/">Find your learning friends <span aria-hidden="true">↗</span></a>
           </div>
@@ -748,9 +749,25 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
             <div class="friends-demo-header"><span class="eyebrow">Friends</span><span class="demo-label">A shared curiosity</span></div>
             <div class="demo-search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3M19 7v6m-3-3h6"/></svg><span>@maya_words</span><span aria-hidden="true">↗</span></div>
             <div class="demo-person"><div class="demo-avatar small" aria-hidden="true"><img src="/custom-ava/Default.webp" width="72" height="72" loading="lazy" alt=""><img src="/custom-ava/hat-3.webp" width="72" height="72" loading="lazy" alt=""><img src="/custom-ava/glasses-1.webp" width="72" height="72" loading="lazy" alt=""></div><div><strong>Maya</strong><span>@maya_words</span></div><span class="demo-request">Request sent ✓</span></div>
-            <div class="demo-incoming"><span class="demo-label">Incoming requests</span><div class="demo-person"><div class="demo-avatar small" aria-hidden="true"><img src="/custom-ava/Default.webp" width="72" height="72" loading="lazy" alt=""><img src="/custom-ava/hat-2.webp" width="72" height="72" loading="lazy" alt=""></div><div><strong>Sam</strong><span>@sam_explores</span></div></div><div class="demo-actions" aria-hidden="true"><span>Accept</span><span>Ignore</span></div></div>
+            <div class="demo-incoming"><span class="demo-label">Incoming requests</span><div class="demo-person"><div class="demo-avatar small" aria-hidden="true"><img src="/custom-ava/Default.webp" width="72" height="72" loading="lazy" alt=""><img src="/custom-ava/hat-2.webp" width="72" height="72" loading="lazy" alt=""></div><div><strong>Sam</strong><span>@sam_explores</span></div></div><div class="demo-actions" aria-hidden="true"><span>Accept</span><span>Deny</span></div></div>
             <p class="friends-note">Every collection has a story.<br>Get to know the person behind it.</p>
             <figcaption>Feature mockup · example users and request</figcaption>
+          </figure>
+        </section>
+        <section class="personal-feature" aria-labelledby="send-title">
+          <div class="personal-copy">
+            <p class="eyebrow">A little word, sent your way</p>
+            <h2 id="send-title">Found a good word?<br>Pass it on.</h2>
+            <p>Some words remind you of someone. Open a vocabulary card in your Pocket, tap <strong>Send to friend</strong>, and choose a friend to share it with.</p>
+            <p>They’ll find your word in their notifications, ready to explore its meaning and add to their own Pocket. A small discovery can become something you learn together.</p>
+            <a class="feature-cta" href="/login/">Share your next discovery <span aria-hidden="true">↗</span></a>
+          </div>
+          <figure class="send-demo" aria-label="Feature mockup: Alex sends serendipity from their Pocket to Maya, who receives a vocabulary notification">
+            <div class="friends-demo-header"><span class="eyebrow">From your Pocket</span><span class="demo-label">To a friend</span></div>
+            <div class="send-word"><span class="demo-label">A WORD WORTH SHARING</span><h3>serendipity</h3><p>A happy discovery you weren’t looking for.</p><div class="send-recipient"><div class="demo-avatar small" aria-hidden="true"><img src="/custom-ava/Default.webp" width="64" height="64" loading="lazy" alt=""><img src="/custom-ava/hat-3.webp" width="64" height="64" loading="lazy" alt=""></div><div><strong>Maya</strong><small>@maya_words</small></div><span class="send-check">Sent ✓</span></div></div>
+            <div class="send-path" aria-hidden="true"><span>YOUR POCKET</span><span>↓</span><span>THEIR NEXT DISCOVERY</span></div>
+            <div class="send-notice"><div class="send-notice-header"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><span>Alex shared a word with you</span></div><p><strong>serendipity</strong> — a little surprise for your vocabulary collection.</p><span class="send-preview-action">Add to Pocket</span></div>
+            <figcaption>Feature mockup · example word and users</figcaption>
           </figure>
         </section>
         <section class="section faq">
