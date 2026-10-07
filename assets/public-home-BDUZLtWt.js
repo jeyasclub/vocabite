@@ -1,7 +1,7 @@
-<!doctype html>
+import{t as e}from"./jsx-runtime-BkSabwWG.js";var t=`<!doctype html>
 <html lang="en">
   <head>
-    <script src="/theme.js"></script>
+    <script src="/theme.js"><\/script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Vocabite — A little pocket. A world of words.</title>
@@ -835,3 +835,4 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
     </div>
   </body>
 </html>
+`,n=e(),r=t.split(`<body>`)[1].split(`</body>`)[0];function i(){return(0,n.jsx)(`div`,{dangerouslySetInnerHTML:{__html:r}})}export{i as t};
