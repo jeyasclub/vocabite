@@ -567,7 +567,11 @@
         .nav-links .login { padding: 8px 12px; }
       }
       /* A vocabulary field notebook: ink, ruled paper, and pocket tabs. */
-      body { background: #faf8f2; }
+      body { background: #edf7ff; isolation: isolate; }
+      body::before {
+        content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+        background: linear-gradient(90deg, rgba(245,251,255,.92), rgba(245,251,255,.56)), url('/mascot/landing-snow.webp') center 65% / cover no-repeat;
+      }
       .nav { border-bottom: 1px solid #1a6fe830; }
       .hero { padding-top: 76px; padding-bottom: 90px; }
       h1 { letter-spacing: -2px; }
@@ -608,6 +612,7 @@
   <style>
 html[data-theme="dark"] { --ink:#edf3fc; --muted:#b1bfd1; --line:#3b506b; --pale:#25364c; --blue:#82b5ff; }
 html[data-theme="dark"] body { background:#101722; }
+html[data-theme="dark"] body::before { background-image:linear-gradient(90deg,rgba(16,23,34,.94),rgba(16,23,34,.78)),url('/mascot/landing-snow.webp'); }
 html[data-theme="dark"] .notebook { background:repeating-linear-gradient(#182332 0 31px,#3b506b 31px 32px); box-shadow:7px 7px 0 #080e18; }
 html[data-theme="dark"] .btn,html[data-theme="dark"] .floating,html[data-theme="dark"] .halo { color:#14263d; }
 html[data-theme="dark"] .word-card { background:#182332; color:var(--ink); }
