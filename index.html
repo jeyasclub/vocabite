@@ -7,7 +7,7 @@
     <title>Vocabite — A little pocket. A world of words.</title>
     <meta
       name="description"
-      content="Discover English words, save them to your Pocket, and practice with Vocabite. Start free on the web. Coming soon to Google Play."
+      content="Discover English words, save them to your Pocket, and practice with Vocabite. Start free on the web. Available on Google Play."
     />
     <meta name="theme-color" content="#1a6fe8" />
     <link rel="icon" href="/favicon.svg" />
@@ -179,7 +179,8 @@
         background: white;
         color: #526177;
         padding: 9px 18px;
-        cursor: not-allowed;
+        cursor: pointer;
+        text-decoration: none;
       }
       .store svg {
         width: 23px;
@@ -660,7 +661,7 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
             </p>
             <div class="actions">
               <a class="button" href="/login/">Start on the web <span aria-hidden="true">↗</span></a
-              ><button class="store" disabled aria-describedby="play-status">
+              ><a class="store" href="https://play.google.com/store/apps/details?id=com.vocabite.myapp" target="_blank" rel="noopener noreferrer" aria-describedby="play-status">
                 <svg viewBox="0 0 24 28" fill="none" aria-hidden="true">
                   <path
                     d="M3 2L22 14L3 26V2Z"
@@ -669,11 +670,11 @@ html[data-theme="dark"] .theme-knob { transform:translateX(32px); background:#46
                     stroke-linejoin="round"
                   />
                   <path d="M3 2L15 18M3 26L15 10" stroke="currentColor" stroke-width="1.5" /></svg
-                ><span><small>COMING SOON TO</small><strong>Google Play</strong></span>
-              </button>
+                ><span><small>GET IT ON</small><strong>Google Play</strong></span>
+              </a>
             </div>
             <p class="note" id="play-status">
-              Use Vocabite in your browser. The Google Play version is coming soon.
+              Use Vocabite in your browser or download the Android app on Google Play.
             </p>
           </div>
           <div class="scene" aria-label="Example Vocabite vocabulary card">
