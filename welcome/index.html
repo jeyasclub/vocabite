@@ -568,12 +568,12 @@
         .nav-links .login { padding: 8px 12px; }
       }
       /* A vocabulary field notebook: ink, ruled paper, and pocket tabs. */
-      body { background: #f8fbff; }
+      body { background: #f8fbff; overflow-x: clip; }
       .hero {
         position: relative; isolation: isolate;
       }
       .hero::before {
-        content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+        content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); z-index: -1; pointer-events: none;
         background: linear-gradient(90deg, rgba(245,251,255,.92), rgba(245,251,255,.56)), url('/mascot/landing-snow.webp') center 65% / cover no-repeat;
       }
       .nav { border-bottom: 1px solid #1a6fe830; }
